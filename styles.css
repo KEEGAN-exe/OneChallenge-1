@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+body{
+    background:  #EFF1FA;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    color: #495057;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    display: none;
+}
+
+.contenedor{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    max-height: 100px;
+    margin-top: 40px;
+    align-self: flex-start;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.cajainput{
+    display: flex;
+    height: 944px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caja{
+    width: 100%;
+    height: auto;
+}
+
+.github{
+    position: absolute;
+    max-width: 3%;
+    display: flex;
+    top: 45%;
+    cursor: pointer;
+} 
+
+.texto{
+    width: 100%;
+    height: auto;
+    border: none;
+    color: #0A3871;
+    background: #EFF1FA;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    font: medium;
+    outline: none;
+}
+
+
+
+.texto::placeholder{
+    color: #0A3871;
+}
+
+.encriptar{
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font: medium;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.desencriptar{
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #EFF1FA;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    font: medium;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cajablanca{
+    display: flex;
+    padding: 30px;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow:  0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultado h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #242424;
+    font-weight: 700;
+}
+
+.resultado p{
+    padding-top: 25px;
+    text-align: center;
+    color: #5A5A5A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.resultado{
+    width: 100%;
+    min-height: 10%;
+    max-height: 40%;
+    font-weight: 400;
+    font-size: 32px;
+    font: medium;
+    color: #495057;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/******* RESPONSIVE DESING ***********************/
+
+@media (min-width:320px) and (max-width:767px){
+    body{
+    }
+
+    .contenedor{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .titulo{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .cajainput{
+        width: 85%;
+        height: 50%;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .botones button{
+        width: 100%;
+    }
+
+    .cajablanca{
+        width: 85%;
+        height: 22%;
+    }
+
+    .resultado h1{
+        font-size: 30px;
+    }
+
+    .resultado p{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+
+    .contenedor{
+        flex-direction: column;
+
+    }
+
+    .titulo{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .cajablanca{
+        width: 75%;
+        margin: 20px;
+    }
+
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+
+    .botones{
+        display: flex;
+        gap: 10px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .titulo{
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .cajainput{
+        width: 50%;
+    }
+
+    .cajablanca{
+        margin: 0 25px;
+    }
+}
